@@ -1,1 +1,1 @@
-# pythin
+# python basics
