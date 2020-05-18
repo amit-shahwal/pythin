@@ -3,9 +3,11 @@ import datetime
 x=datetime.datetime.now();
 
 print (f"the date time is {x}")
-# grades=[1,2,3,[1,3]]
+grades=[1,2,3,[1,3]]
 # # length=len(grades)
 # # print(length,sum(grades))
+for i in grades:
+    print(i)
 # print(grades)
 # dicti={ 'name': "amit",'clas': "4thsem"}
 # print(dicti.values())
