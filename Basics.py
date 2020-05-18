@@ -1,8 +1,8 @@
 import datetime
 # print("The date and time is",datetime.datetime.now())
 x=datetime.datetime.now();
-message= f"the date time is {x}"
-print (message)
+
+print (f"the date time is {x}")
 # grades=[1,2,3,[1,3]]
 # # length=len(grades)
 # # print(length,sum(grades))
