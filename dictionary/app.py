@@ -9,17 +9,24 @@ def getmeaning(word):
     if word in data:
         return data[word]
     elif len(get_close_matches(word,data.keys()))>0:
-        return (f"'{get_close_matches(word,data.keys())[0]}' intead of {word}")
+        cs=input(f"'{get_close_matches(word,data.keys())[0]}' intead of {word}? if yes press 'Y' else 'N: ")
+        if cs == "y" or cs == 'y':
+            return data[get_close_matches(word,data.keys())[0]]
+        else:
+            return 'word not exist , please try again'
     else:
         return 'word not exist , please try again'
 
 
 word=input("enter word: ")
-# j=0
-# for i in (getmeaning(word)):
-#     j=j+1
-#     print(f" %s : %s"%(j,i))
-print(getmeaning(word))
+k=getmeaning(word)
+if type(k)== list:
+    for i in k:
+        print(i)
+        
+else:
+    print(k)
+
 
 
 
